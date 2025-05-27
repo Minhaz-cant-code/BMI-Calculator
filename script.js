@@ -5,7 +5,7 @@ document.getElementById('Main_Form').addEventListener('submit', event=>{
     const feet = parseFloat(document.getElementById('feet').value);
     const inches = parseFloat(document.getElementById('inches').value);
   
-    if (weight <= 0 || feet <= 0 || inches <= 0)
+    if (weight <= 0 || feet < 0 || inches < 0)
     {
       alert("Please enter valid positive numbers.");
       return;
